@@ -11,7 +11,7 @@ public class Registro {
 	private String apellido;
 	private String email;
 	private String contrasenia;
-
+	private int tipodeusuario;
 	
 	
 	
@@ -21,6 +21,7 @@ public class Registro {
 		this.apellido = apellido;
 		this.email = email;
 		this.contrasenia = contrasenia;
+		this.tipodeusuario = idTipodeusuario;
 	}
 
 	public Registro() {
@@ -34,6 +35,7 @@ public class Registro {
 		this.email = sc.nextLine();
 		System.out.println("Ingresar contraseña: ");
 		this.contrasenia = sc.nextLine();
+		this.tipodeusuario = 1;
 
 	}
 
